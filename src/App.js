@@ -4,7 +4,7 @@ import Weather from "./Weather";
 function App() {
   return (
     <div className="App">
-      <Weather />
+      <Weather city="ardabil" />
       <footer>
         <a href="https://github.com/farzanehFathi/react-weather-app">
           Open Source
