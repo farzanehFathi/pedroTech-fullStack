@@ -29,8 +29,7 @@ export default function WeatherInfo({ data }) {
         <h1>{data.cityName}</h1>
         <ul>
           <li>
-            <FormattedTime />
-            Sunday, 14:04
+            <FormattedTime time={data.time} />
           </li>
           <li className="text-capitalize">{data.description}</li>
         </ul>
