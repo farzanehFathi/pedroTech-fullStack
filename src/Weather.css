@@ -1,1 +1,31 @@
+.Weather {
+  padding: 20px;
+  border: 1px solid rgb(222, 222, 222);
+  max-width: 540px;
+  border-radius: 4px;
+}
 
+.Weather .weather-summary {
+  display: flex;
+  align-items: flex-start;
+}
+
+.Weather .temp,
+.unit {
+  color: rgb(33, 33, 33);
+}
+
+.Weather .temp {
+  font-size: 64px;
+  line-height: 64px;
+  margin-left: 6px;
+}
+
+.Weather .icon {
+  width: 64px;
+  height: 64px;
+}
+
+.Weather .unit {
+  margin: 4px 4px 0;
+}
