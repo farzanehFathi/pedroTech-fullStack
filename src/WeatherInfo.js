@@ -1,6 +1,7 @@
 import React from "react";
 import FormattedTime from "./FormattedTime";
 import WeatherIcon from "./WeatherIcon";
+import UnitConversion from "./UnitConversion";
 
 export default function WeatherInfo({ data }) {
   return (
@@ -15,13 +16,13 @@ export default function WeatherInfo({ data }) {
         </ul>
       </div>
       <div className="row gx-0">
-        <ul className="col-6 weather-summary">
-          <li className="icon" id="Icon">
+        <div className="col-6 weather-summary">
+          <div className="icon">
             <WeatherIcon iconCode={data.iconCode} />
-          </li>
-          <li className="temp">{data.temp}</li>
-          <li className="unit">°C</li>
-        </ul>
+          </div>
+          <UnitConversion temperature={data.temp} />
+        </div>
+
         <ul className="col-6">
           <li>Humidiy: {data.humidity}%</li>
           <li>Wind: {data.wind} km/h</li>

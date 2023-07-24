@@ -10,20 +10,29 @@
   align-items: flex-start;
 }
 
+.Weather .icon {
+  width: 64px;
+  height: 64px;
+}
+
+.Weather .icon canvas {
+  margin: 0 auto;
+}
+
 .Weather .temp,
 .unit {
   color: rgb(33, 33, 33);
+}
+
+.Weather .UnitConversion {
+  display: flex;
+  align-items: flex-start;
 }
 
 .Weather .temp {
   font-size: 64px;
   line-height: 64px;
   margin-left: 6px;
-}
-
-.Weather .icon {
-  width: 48px;
-  height: 48px;
 }
 
 .Weather .unit {
