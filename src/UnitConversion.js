@@ -13,7 +13,7 @@ export default function UnitConversion({ temperature }) {
     setTemp(temperature);
   }
 
-  if (temp == temperature) {
+  if (temp === temperature) {
     return (
       <div className="UnitConversion">
         <div className="temp">{temp}</div>
